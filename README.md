@@ -1,24 +1,13 @@
-# README
+# Members-Only Clubhouse
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An exercise to build authentication systems so users can only access areas of a site for
+which they are authorized. As part of the curriculum of [The Odin Project](https://www.theodinproject.com)
 
-Things you may want to cover:
+## Objective
 
-* Ruby version
+Build an exclusive clubhouse applicaatio where members can write 'embarrassing' stories
+about non-members. In the application, members can read stories and see the author's name,
+however, non-members can only read stories and wonder who wrote them.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The poin of the project is to build my own authentication system. As such, styling is less
+of a consideration. There will be some basic bootstrap styling, but don't expect much. ;)
