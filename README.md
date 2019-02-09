@@ -11,3 +11,6 @@ however, non-members can only read stories and wonder who wrote them.
 
 The poin of the project is to build my own authentication system. As such, styling is less
 of a consideration. There will be some basic bootstrap styling, but don't expect much. ;)
+
+### Ruby version:  2.6.1
+### Rails version: 5.2.2
