@@ -1,1 +1,14 @@
-<h1>notes#index</h1>
+<h1>All Messages</h1>
+
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <ul>
+      <%= render @notes %>
+    </ul>
+    <% if logged_in? && current_user.email.include?("guardians") %>
+      <p>
+        <%= link_to "New Message", new_note_path, class: "btn btn-success" %>
+      </p>
+    <% end %>
+  </div>
+</div>

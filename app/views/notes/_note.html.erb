@@ -1,0 +1,18 @@
+<li>
+  <p>
+    <b><%= note.title %></b></p>
+    <% if logged_in? %>
+      <p>By: <em><%= User.find(note.user_id).name %></em></p>
+    <% else %>
+      <p>By: ?????</p>
+    <% end %>
+  </p>
+  <p>
+    <%= note.body.truncate(100, separator: /\s/) %>
+  </p>
+  <p>
+    <% if logged_in? %>
+      <%= link_to "Full Message", note_path(note), class: "btn btn-info btn-xs"%>
+    <% end %>
+  </p>
+</li>
