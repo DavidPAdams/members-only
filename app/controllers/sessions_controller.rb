@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:session][:password])
       log_in @user
       flash[:success] = "Welcome, #{@user.name}, you are now logged in"
-      redirect_to messages_path
+      redirect_to notes_path
     else
       flash.now[:danger] = "Try again with valid credentials"
       render :new

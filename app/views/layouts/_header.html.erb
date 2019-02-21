@@ -1,11 +1,12 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "members only", root_path, id: "logo" %>
+    <%= link_to "members-only message board", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Messages", notes_path %></li>
         <% if logged_in? %>
-          <li><%= current_user.name %></li>
+          <li><a href='#'><%= @current_user.name %></a></li>
           <li><%= link_to "Log out", logout_path %></li>
         <% else %>
           <li><%= link_to "Log in", login_path %></li>
