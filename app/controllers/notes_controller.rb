@@ -30,7 +30,7 @@ class NotesController < ApplicationController
       params.require(:note).permit(:title, :body, :user_id)
     end
 
-    def set_message
+    def set_note
       @note = Note.find(params[:id])
     end
 end
