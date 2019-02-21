@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
   resources :users
-  resources :messages, only: [:index, :new, :create, :show]
+  resources :notes, only: [:index, :new, :create, :show]
 end
